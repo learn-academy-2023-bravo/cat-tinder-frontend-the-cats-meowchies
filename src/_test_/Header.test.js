@@ -2,6 +2,7 @@ import { render, screen } from "@testing-library/react"
 import { BrowserRouter } from "react-router-dom"
 import userEvent from "@testing-library/user-event"
 import Header from "../components/Header"
+import catPhoto from '../assets/catlogo.jpeg'
 
 
 describe("<Header />", () => {
@@ -42,8 +43,9 @@ describe("<Header />", () => {
             div
         )
         const logo = screen.getByRole("img")
-        expect(logo).toHaveAttribute("src", "/assets/catlogo.jpeg")
+        expect(logo).toHaveAttribute("src", "catlogo.jpeg")
         expect(logo).toHaveAttribute("alt", "The Cat's Meowchies logo")
+        
     })
 
     it("has clickble links", () => {

@@ -1,7 +1,24 @@
 .header-nav{
   display: flex;
+  margin: 10px;
+  justify-content: space-between;
 }
+
 .logo{
   object-fit: contain;
   height: 100px;
+}
+.card {
+  margin: 2rem 0;
+}
+
+.cat-index-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.nav-link{
+  display: flex;
+
 }
