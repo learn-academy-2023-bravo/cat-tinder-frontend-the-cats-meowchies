@@ -1,24 +1,74 @@
+
 .header-nav{
   display: flex;
-  margin: 10px;
-  justify-content: space-between;
+  padding: 10px;
+  height: 20vh;
+  /* background: url("https://tse3.mm.bing.net/th?id=OIP.nICc-QeElYRZn7nir7f6QgHaFV&pid=Api&P=0") no-repeat scroll 50% 0% ;
+  background-size: cover; */
+}
+.background{
+  object-fit: cover;
+  height: 70vh;
+  width: 100%
+}
+.links{
+  display: flex;
+  justify-content: center space-evenly;
+  align-items: flex-end;
+}
+
+.header-nav h3 {
+  position: relative;
+  left: 430px;
+  top: 30px;
+  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px, 2px 4px 7px rgba(204,78,213,0);
 }
 
 .logo{
   object-fit: contain;
   height: 100px;
 }
-.card {
-  margin: 2rem 0;
+
+.card-body{
+  background-color: #f0f5fb;
+  padding: 10px;
+  /* -webkit-box-shadow: 5px 5px 7px 5px rgba(0,0,0,0.22); 
+  box-shadow: 5px 5px 7px 5px rgba(0,0,0,0.22); */
+
 }
 
 .cat-index-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px;
+  /* -webkit-box-shadow: 5px 5px 7px 5px rgba(0,0,0,0.22); 
+  box-shadow: 5px 5px 7px 5px rgba(0,0,0,0.22); */
+  background: url("https://tse3.mm.bing.net/th?id=OIP.nICc-QeElYRZn7nir7f6QgHaFV&pid=Api&P=0") no-repeat scroll 50% 0% ;
+  background-size: cover;
+
 }
 
+.image{
+  object-fit: contain;
+  object-fit: cover;
+  border-radius:   20px 20px 0 0;
+  border-bottom: #D0E4F5 solid 2px;
+  /* -webkit-box-shadow: 5px 5px 7px 5px rgba(0,0,0,0.22); 
+  box-shadow: 5px 5px 7px 5px rgba(0,0,0,0.22); */
+}
 .nav-link{
   display: flex;
+}
 
+.card_body{
+  background-color: white;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 10vh;
 }
