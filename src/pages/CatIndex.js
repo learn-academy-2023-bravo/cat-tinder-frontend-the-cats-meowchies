@@ -2,7 +2,7 @@ import React from "react"
 
 import { NavLink } from "react-router-dom"
 
-import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button } from "reactstrap"
+import { Card, CardBody, CardTitle, CardText, Button } from "reactstrap"
 
 
 
@@ -27,24 +27,23 @@ const CatIndex = ({ cats }) => {
                 <CardTitle className="card_title" tag="h5">
                 {value.name}
                 </CardTitle>
-                <CardSubtitle
-                  className="card_subtitle"
-                  tag="h6"
-                >
-                  Age: {value.age}
-                </CardSubtitle>
+                
 
-                <NavLink to={`/catshow/${value.id}`} className="nav-link">
-                  See More Details
-                </NavLink>
+               
 
 
                 <CardText>
             
                 </CardText>
-                <Button>
-                  Click to see profile
-                </Button>
+                <NavLink
+                    id="button1"
+                    className="self-end"
+                    to={`/catshow/${value.id}`}
+                    
+                  >
+                    <button>Click to see your puuurrrfect options</button>
+                </NavLink>
+        
  
               </CardBody>
             </Card>
