@@ -1,6 +1,10 @@
 import React from "react"
-import { Card, CardBody, CardTitle, CardSubtitle, } from "reactstrap"
+
 import { NavLink } from "react-router-dom"
+
+import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button } from "reactstrap"
+
+
 
 const CatIndex = ({ cats }) => {
 
@@ -9,23 +13,39 @@ const CatIndex = ({ cats }) => {
         {cats?.map((value, index) => {
           return (
             <Card
+              body
+              color="light"
               style={{
-                width: "14rem"
+                width: '18rem'
               }}
-              key={index}
             >
-              <img alt={`profile of a value named ${value.name}`} src={value.image} />
-              <CardBody>
-                <CardTitle tag="h5">{value.name}</CardTitle>
-                <CardSubtitle className="mb-2 text-muted" tag="h6">
+              <img
+                className="image" alt={`profile of a value named ${value.name}`}
+                src={value.image}
+              />
+              <CardBody className="card_body">
+                <CardTitle className="card_title" tag="h5">
+                {value.name}
+                </CardTitle>
+                <CardSubtitle
+                  className="card_subtitle"
+                  tag="h6"
+                >
                   Age: {value.age}
-                  <br/>
-                  Enjoys: {value.enjoys}
                 </CardSubtitle>
+
                 <NavLink to={`/catshow/${value.id}`} className="nav-link">
                   See More Details
                 </NavLink>
 
+
+                <CardText>
+            
+                </CardText>
+                <Button>
+                  Click to see profile
+                </Button>
+ 
               </CardBody>
             </Card>
           )
