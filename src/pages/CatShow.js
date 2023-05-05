@@ -3,12 +3,22 @@ import { useParams } from "react-router-dom"
 
 const CatShow = ({ cats }) => {
     const { id } = useParams()
-    let currentCat = cats.find((value) => cats.id === +id)
-    console.log(id)
+    let currentCat = cats.find((value) => value.id === +id)
+    
+
     return(
-        <>
-            <h3>CatShow</h3>
-        </>
+        <main> 
+            {currentCat && (
+                <>
+                    <img
+                    alt={`profile of a cat named ${currentCat.name}
+                    `}
+                    src={currentCat.image}
+                    
+                    />
+                </>
+            )}
+        </main>
     )
 }
 

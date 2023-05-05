@@ -21,8 +21,7 @@ const App =() => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route CatIndex path="/catindex" element={<CatIndex cats={cats} />} />
-        <Route CatShow path="/catshow" element={<CatShow cats={cats} />} />
-        <Route CatNew path="/catnew" element={<CatNew/>} />
+        <Route path="/catshow/:id" element={<CatShow cats={cats} />} />        <Route CatNew path="/catnew" element={<CatNew/>} />
         <Route CatEdit path="/catEdit" element={<CatEdit/>} />
         <Route NotFound path="*" element={<NotFound/>} />
       </Routes>
